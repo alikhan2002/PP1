@@ -1,0 +1,26 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+int main(){
+vector<int> v;
+int n;
+cin>>n;
+int x;
+for(int i=0;i<n;i++){
+cin>>x;
+v.push_back(x);
+}
+int a;
+cin>>a;
+int sum=0;
+sort(v.begin(),v.end());
+reverse(v.begin(),v.end());
+for(int i=0;i<a;i++){
+    sum+=v[i];
+}
+cout<<sum;
+
+
+return 0;
+}
